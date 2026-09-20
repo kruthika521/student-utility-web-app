@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Features</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>🎓 Smart Student Utility</h1>
+    <div>
+        <button onclick="go('index.html')">Home</button>
+        <button onclick="go('about.html')">About</button>
+        <button onclick="go('features.html')">Features</button>
+        <button onclick="go('app.html')">App</button>
+    </div>
+</header>
+
+<h2 style="text-align:center; margin-top:20px;">Key Features</h2>
+
+<!-- FEATURE CARD 1 -->
+<div class="feature-card">
+    <h3>🎓 Grade Calculator</h3>
+    <button onclick="toggleContent('f1')">View Details</button>
+    <p id="f1" class="hidden-text">
+        The Grade Calculator helps students calculate total marks, average, and grade instantly.
+        It reduces manual errors and provides quick academic performance evaluation.
+    </p>
+</div>
+
+<!-- FEATURE CARD 2 -->
+<div class="feature-card">
+    <h3>🔁 Palindrome Checker</h3>
+    <button onclick="toggleContent('f2')">View Details</button>
+    <p id="f2" class="hidden-text">
+        This tool checks whether a word reads the same forward and backward.
+        It helps in understanding string operations and logic building.
+    </p>
+</div>
+
+<!-- FEATURE CARD 3 -->
+<div class="feature-card">
+    <h3>🔢 Number Analyzer</h3>
+    <button onclick="toggleContent('f3')">View Details</button>
+    <p id="f3" class="hidden-text">
+        Identifies whether a number is even or odd and determines if it is positive,
+        negative, or zero, helping students understand number properties.
+    </p>
+</div>
+
+<!-- FEATURE CARD 4 -->
+<div class="feature-card">
+    <h3>🔐 Login Validation</h3>
+    <button onclick="toggleContent('f4')">View Details</button>
+    <p id="f4" class="hidden-text">
+        Demonstrates a simple authentication system by validating username and password,
+        useful for learning input validation concepts.
+    </p>
+</div>
+
+<!-- FEATURE CARD 5 -->
+<div class="feature-card">
+    <h3>🌙 Dark Mode</h3>
+    <button onclick="toggleContent('f5')">View Details</button>
+    <p id="f5" class="hidden-text">
+        Allows users to switch between light and dark themes, improving user experience
+        and demonstrating dynamic styling using JavaScript.
+    </p>
+</div>
+
+<footer>
+    <p>
+        Smart Student Utility | Helps students with smart tools |
+        <button onclick="go('index.html')">Home</button>
+        <button onclick="go('about.html')">About</button>
+        <button onclick="go('features.html')">Features</button>
+        <button onclick="go('app.html')">App</button>
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>

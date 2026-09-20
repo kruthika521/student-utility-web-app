@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>🎓 Smart Student Utility</h1>
+    <div>
+        <button onclick="go('index.html')">Home</button>
+        <button onclick="go('about.html')">About</button>
+        <button onclick="go('features.html')">Features</button>
+        <button onclick="go('app.html')">App</button>
+    </div>
+</header>
+
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+<div class="card">
+    <h2>Student Grade Calculator</h2>
+    <input type="text" id="studentName" placeholder="Enter Name"><br><br>
+    <input type="number" id="m1" placeholder="Subject 1"><br><br>
+    <input type="number" id="m2" placeholder="Subject 2"><br><br>
+    <input type="number" id="m3" placeholder="Subject 3"><br><br>
+    <input type="number" id="m4" placeholder="Subject 4"><br><br>
+    <input type="number" id="m5" placeholder="Subject 5"><br><br>
+    <button onclick="calculateGrade()">Calculate</button>
+    <button onclick="resetGrade()">Reset</button>
+    <p id="gradeResult"></p>
+</div>
+
+<div class="card">
+    <h2>Palindrome Checker</h2>
+    <input type="text" id="palindromeInput" placeholder="Enter word">
+    <button onclick="checkPalindrome()">Check</button>
+    <button onclick="resetPalindrome()">Reset</button>
+    <p id="palindromeResult"></p>
+</div>
+
+<div class="card">
+    <h2>Number Analyzer</h2>
+    <input type="number" id="numberInput" placeholder="Enter number">
+    <button onclick="analyzeNumber()">Analyze</button>
+    <button onclick="resetNumber()">Reset</button>
+    <p id="numberResult"></p>
+</div>
+
+<div class="card">
+    <h2>Simple Login</h2>
+    <input id="username" placeholder="Username"><br><br>
+    <input id="password" type="password" placeholder="Password"><br><br>
+    <button onclick="validateLogin()">Login</button>
+    <p id="loginResult"></p>
+</div>
+
+<footer>
+    <p>
+        Smart Student Utility | Helps students with smart tools |
+        <button onclick="go('index.html')">Home</button>
+        <button onclick="go('about.html')">About</button>
+        <button onclick="go('features.html')">Features</button>
+        <button onclick="go('app.html')">App</button>
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

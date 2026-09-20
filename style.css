@@ -1,0 +1,133 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    margin:0;
+    min-height:100vh;
+}
+
+/* HEADER */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #111;
+    color: white;
+}
+
+.main-header button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    color: white;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: orange;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* LIST */
+ul {
+    text-align: left;
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:20px;
+}
+
+/* CARD DESIGN */
+.card{
+    background: rgba(255, 255, 255, 0.95);
+    padding:20px;
+    margin:20px auto;
+    width:350px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* BUTTON */
+button{
+    padding:8px 12px;
+    margin-top:5px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1e40af;
+    transform: scale(1.05);
+}
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --card-bg: white;
+}
+
+.dark-mode {
+    --bg-color: #141e30;
+    --text-color: white;
+    --card-bg: #2c2c2c;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.card {
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+.feature-card{
+    background:#ffffff;
+    margin:20px auto;
+    padding:20px;
+    width:400px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.feature-card button{
+    margin-top:10px;
+}
+
+/* hidden content */
+.hidden-text{
+    display:none;
+    margin-top:10px;
+    text-align:justify;
+}
